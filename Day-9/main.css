@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background: linear-gradient(to right, dodgerblue, purple);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.container aside {
+  width: 20vw;
+  height: 100%;
+  padding-top: 2vh;
+  background: transparent;
+  border-right: 1px solid #fff;
+  color: #fff;
+  padding-left: 3vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container aside .logo {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container aside .sublogo {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 2vh 0;
+}
+.container aside .sublogo h2 {
+  font-weight: 500;
+}
+.container aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.container aside nav a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.container aside nav a.active {
+  color: yellow;
+}
+.container section {
+  background: transparent;
+  height: 100%;
+  width: 80vw;
+  padding-top: 2vh;
+  position: fixed;
+  top: 0;
+  left: 20vw;
+}
+.container section .nav1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+.container section .nav1 .search {
+  align-items: center;
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  height: 35px;
+  padding: 0 1vw;
+  width: 300px;
+  gap: 1vw;
+  color: #fff;
+}
+.container section .nav1 .search input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+}
+.container section .nav1 .search input::-moz-placeholder {
+  color: #fff;
+}
+.container section .nav1 .search input::placeholder {
+  color: #fff;
+}
+.container section .nav1 .right {
+  align-items: center;
+  display: flex;
+  gap: 3vw;
+}
+.container section .nav1 .right nav {
+  align-items: center;
+  display: flex;
+  gap: 2vw;
+}
+.container section .nav1 .right nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.container section .nav1 .right .socials {
+  align-items: center;
+  display: flex;
+  gap: 1vw;
+}
+.container section .nav1 .right .socials .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+.container section .nav2 {
+  margin: 2vh 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+.container section .nav2 h2 {
+  color: #fff;
+  font-weight: 500;
+}
+.container section .nav2 .right {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.container section .nav2 .right select {
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  color: #fff;
+}
+.container section .nav2 .right select option {
+  width: 150px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  color: #000;
+}
+.container section .wrapper {
+  width: 100%;
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.container section .wrapper main {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  padding: 0 0 0 2vw;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2vh;
+}
+.container section .wrapper main .card {
+  width: 23%;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: column;
+  display: flex;
+}
+.container section .wrapper main .card .image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.container section .wrapper main .card .image img {
+  width: 100%;
+  border-radius: 15px;
+}
+.container section .wrapper main .card .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container section .wrapper main .card .info .lf h4 {
+  font-size: 1.2em;
+  color: #fff;
+}
+.container section .wrapper main .card .info .rt {
+  display: flex;
+  font-size: 0.9em;
+  align-items: center;
+  color: #fff;
+  gap: 0.5em;
+}
+.container section .wrapper main .card .info .rt .ratings i {
+  color: gold;
+}
+.container section .wrapper main .card p {
+  font-size: 0.9em;
+  color: #fff;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */

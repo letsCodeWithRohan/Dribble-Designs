@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #2F3C34;
+  padding: 1vw;
+}
+.container main {
+  width: 100%;
+  height: 100%;
+  background: #F8F7F0;
+  border-radius: 15px;
+}
+.container main header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vw;
+}
+.container main header .logo {
+  color: #16300B;
+  font-weight: 600;
+  font-size: 22px;
+}
+.container main header nav ul {
+  display: flex;
+  gap: 3vw;
+}
+.container main header nav ul li {
+  list-style: none;
+}
+.container main header nav ul li a {
+  text-decoration: none;
+  color: grey;
+}
+.container main header nav ul li a.active {
+  font-weight: 600;
+  color: #16300B;
+}
+.container main header .btn {
+  color: #16300B;
+  background: #FFFBE1;
+  border: 1px solid #2F3C34;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.container main section {
+  width: 100%;
+  height: 75vh;
+  padding: 3vw 3vw 0 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container main section .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+}
+.container main section .left .fst {
+  font-size: 5vh;
+  line-height: 1.2;
+  color: #16300B;
+}
+.container main section .left .fst Strong {
+  font-weight: 700;
+}
+.container main section .left .fst h1 {
+  font-weight: 500;
+}
+.container main section .left .snd p {
+  color: grey;
+}
+.container main section .left .thd {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.container main section .left .thd .btn2 {
+  color: #3B6327;
+  background: #BBDFAC;
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  border: 1px solid #3B6327;
+}
+.container main section .left .thd p {
+  line-height: 1.5;
+  color: #2F3C34;
+  font-size: 15px;
+}
+.container main section .left .thd .icons {
+  display: flex;
+  position: relative;
+}
+.container main section .left .thd .icons .share {
+  background: #B4E4C8;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  color: #32605A;
+  z-index: 30;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.container main section .left .thd .icons .arrow {
+  position: absolute;
+  left: 45px;
+  background: #BBDFAC;
+  height: 48px;
+  width: 48px;
+  color: #4F562F;
+  transform: rotate(135deg);
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  border-radius: 50%;
+}
+.container main section .right {
+  align-items: flex-end;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  gap: 4vh;
+  flex-direction: column;
+}
+.container main section .right .box {
+  height: 350px;
+  width: 90%;
+  background: linear-gradient(135deg, #ddd, #aaa);
+  position: relative;
+  border-radius: 10px;
+}
+.container main section .right .box img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.container main section .right .box .msg {
+  background: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 7px;
+  padding: 3px;
+  width: 175px;
+  top: -30px;
+  right: 5px;
+}
+.container main section .right .box .msg span {
+  color: grey;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.container main section .right .box .msg p {
+  color: #2F3C34;
+  text-decoration: underline;
+  text-align: justify;
+  font-size: 14px;
+}
+.container main section .right .stats {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  gap: 2vw;
+}
+.container main section .right .stats .st {
+  text-align: center;
+}
+.container main section .right .stats .st h3 {
+  color: #16300B;
+}
+.container main section .right .stats .st p {
+  font-size: 14px;
+}
+.container main .last {
+  width: 100%;
+  height: 45vh;
+  padding: 0 3vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container main .last .elm {
+  width: 32%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+}
+.container main .last .elm h1 {
+  font-size: 20px;
+}
+.container main .last .elm p {
+  width: 70%;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */

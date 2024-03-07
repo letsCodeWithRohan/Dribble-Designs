@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day - 8 | Dribble Design</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="left">
+                <div class="logo">
+                    <img src="./logoofr.jpg">
+                    <h2>Rohan</h2>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <div class="right">
+                <div class="rIcon" id="mode">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="rIcon">
+                    <i class="bi bi-gear"></i>
+                </div>
+                <div class="rIcon">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="rIcon">
+                    <img src="./logoofr.jpg">
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="item active">
+                <i class="bi bi-house-door"></i>
+                <p>Home</p>
+            </div>
+            <div class="item">
+                <i class="bi bi-question-square"></i>
+                <p>Questions</p>
+            </div>
+            <div class="item">
+                <i class="bi bi-envelope"></i>
+                <p>Messages</p>
+            </div>
+            <div class="item">
+                <i class="bi bi-tags"></i>
+                <p>Tags</p>
+            </div>
+            <div class="item">
+                <i class="bi bi-people"></i>
+                <p>Users</p>
+            </div>
+            <div class="item">
+                <i class="bi bi-building"></i>
+                <p>Companies</p>
+            </div>
+            <div class="plan">
+                <h2>Premium Plan</h2>
+                <div class="btm">
+                    <p>Upgrade to Premium <br>and get lifetime unlimeted <br>access to all questions <br>answers</p>
+                    <div class="btn">
+                        <span>
+                            Upgrade Now
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+        <main>
+            <div class="heading flex-center justify-between">
+                <h2>All Questions</h2>
+                <div class="btn">
+                    <i class="fa-solid fa-plus"></i>
+                    <span>Ask a question</span>
+                </div>
+            </div>
+            <nav class="flex-center justify-between">
+                <div class="left flex-center">
+                    <div class="active navItem flex-center">
+                        <i class="bi bi-heart-fill"></i>
+                        <span>Following</span>
+                    </div>
+                    <div class="navItem flex-center">
+                        <i class="bi bi-question-square"></i>
+                        <span>Unanswered</span>
+                    </div>
+                    <div class="navItem flex-center">
+                        <i class="bi bi-star"></i>
+                        <span>Relevant</span>
+                    </div>
+                    <div class="navItem flex-center">
+                        <i class="bi bi-arrow-up"></i>
+                        <span>Popular</span>
+                    </div>
+                </div>
+                <div class="btn flex-center">
+                    <i class="bi bi-filter"></i>
+                    <span>Filter</span>
+                </div>
+            </nav>
+            <div class="codePart flex-center">
+                <div class="profile">
+                    <div class="left">
+                        <img src="./logoofr.jpg" alt="">
+                        <span class="name">Chaudhari Rohan</span>
+                    </div>
+                    <span class="date">27 Nov</span>
+                </div>
+                <div class="question">
+                    <p>How do I return the response/result from a function foo that makes an asynchronous resuest?</p>
+                </div>
+                <div class="code">
+                    <pre><code>⠀<span style="color: #318ce1;">function</span> <span  style="color: #f9734a;">foo</span>() { <br>
+                        ⠀⠀⠀⠀<span style="color: #318ce1;">var</span> result;<br>
+                        <br>
+                        ⠀⠀⠀⠀$.<span style="color: #f9734a;">ajax</span>({<br>
+                            ⠀⠀⠀⠀⠀⠀<span style="color: #318ce1;">url</span>: '...',<br>
+                            ⠀⠀⠀⠀⠀⠀<span style="color: #318ce1;">success</span>: <span style="color: #318ce1;">function</span> (response) {<br>
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀result = response;<br>
+                                ⠀⠀⠀⠀⠀⠀⠀⠀⠀//return response; <span style="color: #7b7f93;">// <- I tried that one as well </span><br>
+                                ⠀⠀⠀}}); <br>
+                        <br>
+                        ⠀⠀⠀⠀<span style="color: #318ce1;">return</span> result; <span style="color: #7b7f93;">// It always returns undefined </span><br>
+                        ⠀}
+                    </code>
+                </pre>
+                </div>
+                <div class="tags">
+                    <div class="tag" style="background: #f9734a;">
+                        <span>javascript</span>
+                    </div>
+                    <div class="tag">
+                        <span>asynchronous</span>
+                    </div>
+                    <div class="tag" style="background: #b31f1f;">
+                        <span>ajax</span>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="left">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <span>12</span>
+                        <i class="bi bi-chat-square-dots"></i>
+                        <span>32</span>
+                    </div>
+                    <div class="right">
+                        <i class="bi bi-eye"></i>
+                        <span>418</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="aside2">
+            <div class="heading">
+                <h3>Popular Questions</h3>
+                <span>See all</span>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <div class="left">
+                        <img src="./logoofr.jpg" alt="">
+                        <span class="name">Chaudhari Rohan</span>
+                    </div>
+                    <span class="date">27 Nov</span>
+                </div>
+                <div class="content">
+                    <span>
+                        In this C++ code, sorting the data (before the <br />timed region) makes the primary loop -6x...
+                    </span>
+                </div>
+                <div class="tags">
+                    <div class="tag" style="background: #CC5D3A;">
+                        <span>#java</span>
+                    </div>
+                    <div class="tag" style="background: #B52095;">
+                        <span>#jcplusplus</span>
+                    </div>
+                    <div class="tag" style="background: #189F66;">
+                        <span>#perfomance</span>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="left">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <span>12</span>
+                        <i class="bi bi-chat-square-dots"></i>
+                        <span>32</span>
+                    </div>
+                    <div class="right">
+                        <i class="bi bi-eye"></i>
+                        <span>418</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="profile">
+                    <div class="left">
+                        <img src="./logoofr.jpg" alt="">
+                        <span class="name">Donald Trump</span>
+                    </div>
+                    <span class="date">2 Dec</span>
+                </div>
+                <div class="content">
+                    <span>
+                        I accidentally comitted the wrong files to Git,<br />but didn't push the commit to the server...
+                    </span>
+                </div>
+                <div class="tags">
+                    <div class="tag" style="background: #56A332;">
+                        <span>#jcplusplus</span>
+                    </div>
+                    <div class="tag" style="background: #CC5D3A;">
+                        <span>#java</span>
+                    </div>
+                    <div class="tag">
+                        <span>#perfomance</span>
+                    </div>
+                </div>
+                <div class="last">
+                    <div class="left">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <span>8</span>
+                        <i class="bi bi-chat-square-dots"></i>
+                        <span>16</span>
+                    </div>
+                    <div class="right">
+                        <i class="bi bi-eye"></i>
+                        <span>337</span>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">
+                <h3>Collectives</h3>
+                <span>See all</span>
+            </div>
+            <div class="lang">
+                <div class="left">
+                    <div class="logo">
+                        <img src="./python.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Python</p>
+                        <span>21k members</span>
+                    </div>
+                </div>
+                <div class="install">
+                    <span>Join</span>
+                </div>
+            </div>
+            <div class="lang">
+                <div class="left">
+                    <div class="logo">
+                        <img src="./ChatGPT.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p>ChatGPT</p>
+                        <span>38k members</span>
+                    </div>
+                </div>
+                <div class="install">
+                    <span>Join</span>
+                </div>
+            </div>
+            <div class="lang">
+                <div class="left">
+                    <div class="logo">
+                        <img src="./ps.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p>Photoshop Basics</p>
+                        <span>101k members</span>
+                    </div>
+                </div>
+                <div class="install">
+                    <span>Join</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

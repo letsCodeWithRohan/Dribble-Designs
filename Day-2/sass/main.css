@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.section {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.home {
+  position: relative;
+  padding-bottom: 18vh;
+  background: linear-gradient(#152A19 50%, #C8DDCA 50%);
+}
+.home .ender {
+  display: block;
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 150px;
+  color: #1B9130;
+}
+.home header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+}
+.home header nav {
+  display: flex;
+  gap: 1vw;
+}
+.home header nav li {
+  list-style: none;
+}
+.home header nav li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.home header .logo p {
+  color: #fff;
+  font-weight: 700;
+}
+.home header .center p {
+  color: #fff;
+}
+.home header .center p span {
+  color: #1B9130;
+}
+.home .heroImage {
+  width: 90vw;
+  height: 80vh;
+  margin: 1vh 5vw;
+  background: url(../background.jpg);
+  background-position: center;
+  padding: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .heroImage .left, .home .heroImage .right {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.home .heroImage .left .badge, .home .heroImage .right .badge {
+  width: 50px;
+  height: 50px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #fff;
+}
+.home .heroImage .center {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.home .heroImage .center .top, .home .heroImage .center .bottom, .home .heroImage .center .middle {
+  color: #fff;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+.home .heroImage .center .top, .home .heroImage .center .bottom {
+  width: 400px;
+  border-radius: 10px;
+  height: 60px;
+}
+.home .heroImage .center .middle {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px 0;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  font-size: 20px;
+}
+.home .heroImage .center .top {
+  border: 2px solid #ddd;
+  border-top: none;
+}
+.home .heroImage .center .bottom {
+  border: 2px solid #ddd;
+  border-bottom: none;
+}
+.home .count {
+  width: 90vw;
+  height: 15vh;
+  margin: 1vh 5vw;
+  display: flex;
+  align-items: center;
+  padding: 4%;
+  background: transparent;
+  justify-content: space-between;
+}
+.home .count .countInner h1 {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+.home .count .countInner p {
+  font-weight: 500;
+  color: #1B9130;
+  text-align: center;
+  text-transform: uppercase;
+}
+.home .heroEnd {
+  padding: 0 4%;
+  width: 90vw;
+  height: 20vh;
+  margin: 1vh 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .heroEnd .endInner {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home .heroEnd .endInner p {
+  text-align: center;
+  padding: 0 20px;
+}
+.home .heroEnd .endInner .bagde {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+.home .heroEnd .endInner .bagde i {
+  background: #1B9130;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: grid;
+  font-size: 25px;
+  place-items: center;
+  border-radius: 50%;
+}
+.home .heroEnd .endInner .bagde h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+}/*# sourceMappingURL=main.css.map */

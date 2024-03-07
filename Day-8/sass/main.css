@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary: #16161A;
+  --secondary: #1c1e27;
+  --text: #fff;
+}
+
+body.light {
+  --primary: #fff;
+  --secondary: #eff1f3;
+  --text: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: var(--primary);
+  position: relative;
+  color: var(--text);
+}
+.container header {
+  height: 60px;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  padding: 0 2vw;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--secondary);
+}
+.container header .left {
+  display: flex;
+  align-items: center;
+}
+.container header .left .logo {
+  width: 15vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.container header .left .logo img {
+  height: 30px;
+  border-radius: 50%;
+}
+.container header .left .search {
+  background: var(--secondary);
+  width: 100%;
+  height: 80%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.container header .left .search i {
+  margin-left: 5px;
+}
+.container header .left .search input {
+  background: transparent;
+  outline: 0;
+  border: none;
+  margin-left: 10px;
+  color: var(--text);
+}
+.container header .right {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.container header .right .rIcon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  background: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container header .right .rIcon img {
+  height: 30px;
+  border-radius: 50%;
+}
+.container aside {
+  position: relative;
+  height: calc(100vh - 60px);
+  border-right: 2px solid var(--secondary);
+  width: 16vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+.container aside .item {
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding-left: 1vw;
+  color: #7b7f93;
+}
+.container aside .item i {
+  font-size: 1.3em;
+}
+.container aside .item p {
+  font-size: 0.9em;
+}
+.container aside .item.active {
+  background: #1c4cd3;
+  color: #fff !important;
+}
+.container aside .plan {
+  width: calc(100% - 2vw);
+  height: 220px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, blue, deeppink, red);
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  padding: 1vw;
+  margin: 1vw;
+}
+.container aside .plan h2 {
+  font-weight: 300;
+  font-size: 1.4em;
+  color: #fff;
+}
+.container aside .plan .btm {
+  width: 100%;
+  height: 65%;
+}
+.container aside .plan .btm p {
+  text-align: left;
+  font-size: 0.7em;
+  color: #fff;
+}
+.container aside .plan .btm .btn {
+  margin-top: 1vw;
+  height: 40px;
+  width: 100%;
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  font-size: 1em;
+  font-weight: 600;
+}
+.container main {
+  width: 59vw;
+  position: absolute;
+  height: calc(100vh - 60px);
+  border-right: 2px solid var(--secondary);
+  top: 60px;
+  left: 16vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding: 1vw;
+}
+.container main .heading {
+  width: 100%;
+}
+.container main .heading .btn {
+  background: #1c4cd3;
+  padding: 6px 10px;
+  border-radius: 10px;
+  color: #fff;
+  gap: 1vh;
+}
+.container main nav {
+  width: 100%;
+  margin: 1vh 0;
+}
+.container main nav .left {
+  width: 60%;
+  justify-content: space-between;
+  gap: 1vw;
+}
+.container main nav .left .navItem {
+  gap: 10px;
+}
+.container main nav .left .navItem.active {
+  border-bottom: 2px solid var(--text);
+}
+.container main nav .btn {
+  border: 1px solid #7b7f93;
+  padding: 5px 10px;
+  border-radius: 10px;
+  gap: 1vh;
+}
+.container main .codePart {
+  width: 100%;
+  flex-direction: column;
+  background: var(--secondary);
+  border-radius: 10px;
+  padding: 1vw;
+  gap: 1vh;
+}
+.container main .codePart .profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container main .codePart .profile .left {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.container main .codePart .profile .left .name {
+  color: var(--text);
+  font-size: 1em;
+}
+.container main .codePart .profile .left img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.container main .codePart .profile .date {
+  color: #7b7f93;
+  font-size: 0.8em;
+}
+.container main .codePart .question {
+  font-size: 1.2em;
+  color: var(--text);
+}
+.container main .codePart .code {
+  border: 1px solid #7b7f93;
+  padding: 1vh;
+  border-radius: 10px;
+  width: 100%;
+}
+.container main .codePart .code pre {
+  line-height: 1.2em;
+}
+.container main .codePart .code code, .container main .codePart .code span {
+  font-family: "Fira Code";
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+.container main .codePart .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container main .codePart .tags .tag {
+  background: #1c4cd3;
+  color: #fff;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+}
+.container main .codePart .tags .tag span {
+  font-size: 0.65em;
+}
+.container main .codePart .last {
+  display: flex;
+  align-items: center;
+  margin-top: 1vh;
+  width: 100%;
+  justify-content: space-between;
+}
+.container main .codePart .last .left {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.container main .codePart .last .left span {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+.container main .codePart .last .right {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.container main .codePart .last .right span {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+.container .aside2 {
+  height: calc(100vh - 60px);
+  width: 25vw;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  padding: 1vw 1vw 0 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.container .aside2 .heading {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .aside2 .card {
+  width: 100%;
+  height: auto;
+  background: var(--secondary);
+  border-radius: 10px;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.container .aside2 .card .profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .aside2 .card .profile .left {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.container .aside2 .card .profile .left .name {
+  color: var(--text);
+  font-size: 1em;
+}
+.container .aside2 .card .profile .left img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.container .aside2 .card .profile .date {
+  color: #7b7f93;
+  font-size: 0.8em;
+}
+.container .aside2 .card .content span {
+  font-size: 0.75em;
+  line-height: 0.4;
+}
+.container .aside2 .card .tags {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .aside2 .card .tags .tag {
+  background: #1c4cd3;
+  color: #fff;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  padding: 5px;
+}
+.container .aside2 .card .tags .tag span {
+  font-size: 0.65em;
+}
+.container .aside2 .card .last {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .aside2 .card .last .left {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.container .aside2 .card .last .left span {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+.container .aside2 .card .last .right {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.container .aside2 .card .last .right span {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+.container .aside2 .lang {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: var(--secondary);
+  justify-content: space-between;
+  padding: 5px 1vw 5px 1vw;
+  border-radius: 10px;
+  height: 50px;
+}
+.container .aside2 .lang .left {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.container .aside2 .lang .left .logo {
+  display: flex;
+}
+.container .aside2 .lang .left .logo img {
+  height: 30px;
+  width: 30px;
+}
+.container .aside2 .lang .left .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+.container .aside2 .lang .left .info p {
+  font-size: 0.8em;
+  line-height: 0.5;
+}
+.container .aside2 .lang .left .info span {
+  font-size: 0.7em;
+  color: #7b7f93;
+}
+.container .aside2 .lang .install {
+  background: #1c4cd3;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.container .aside2 .lang .install span {
+  font-size: 0.8em;
+}/*# sourceMappingURL=main.css.map */

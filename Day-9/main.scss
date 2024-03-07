@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    background: linear-gradient(to right, dodgerblue, purple);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    aside {
+        width: 20vw;
+        height: 100%;
+        padding-top: 2vh;
+        background: transparent;
+        border-right: 1px solid #fff;
+        color: #fff;
+        padding-left: 3vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        & .logo {
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        & .sublogo{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 2vh 0;
+            & h2{
+                font-weight: 500;
+            }
+        }
+        & nav{
+            display: flex;
+            flex-direction: column;
+            gap: 4vh;
+            & a{
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                gap: 1vw;
+                &.active{
+                    color: yellow;
+                }
+            }
+        }
+    }
+
+    section {
+        background: transparent;
+        height: 100%;
+        width: 80vw;
+        padding-top: 2vh;
+        position: fixed;
+        top: 0;
+        left: 20vw;
+
+        & .nav1 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            justify-content: space-between;
+            padding: 0 2vw;
+
+            & .search {
+                align-items: center;
+                display: flex;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 25px;
+                backdrop-filter: blur(5px);
+                height: 35px;
+                padding: 0 1vw;
+                width: 300px;
+                gap: 1vw;
+                color: #fff;
+
+                & input {
+                    background: transparent;
+                    border: 0;
+                    outline: 0;
+                    color: #fff;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+                }
+            }
+
+            & .right {
+                align-items: center;
+                display: flex;
+                gap: 3vw;
+
+                & nav {
+                    align-items: center;
+                    display: flex;
+                    gap: 2vw;
+
+                    & a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+
+                & .socials {
+                    align-items: center;
+                    display: flex;
+                    gap: 1vw;
+
+                    & .icon {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        background: transparent;
+                        display: grid;
+                        place-items: center;
+                    }
+                }
+            }
+        }
+
+        & .nav2 {
+            margin: 2vh 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 50px;
+            justify-content: space-between;
+            padding: 0 2vw;
+
+            & h2{
+                color: #fff;
+                font-weight: 500;
+            }
+
+            & .right {
+                display: flex;
+                align-items: center;
+                gap: 2vw;
+                & select {
+                    width: 150px;
+                    height: 40px;
+                    background: transparent;
+                    border-radius: 25px;
+                    border: 1px solid #ddd;
+                    padding: 0 10px;
+                    color: #fff;
+
+                    & option {
+                        width: 150px;
+                        height: 40px;
+                        background: rgba(255, 255, 255, 0.2);
+                        border-radius: 25px;
+                        border: 1px solid #ddd;
+                        padding: 0 10px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        & .wrapper{
+            width: 100%;
+            height: 80vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            & main{
+                height: 120vh;
+                width: 100%;
+                display: flex;
+                padding: 0 0 0 2vw;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 2vh;
+                & .card{
+                // border: 1px solid red;
+                width: 23%;
+                height: fit-content;
+                flex-direction: column;
+                display: flex;
+                & .image{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 15px;
+                    & img{
+                        width: 100%;
+                        border-radius: 15px;
+                    }
+                }
+                & .info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    & .lf{
+                        & h4{
+                            font-size: 1.2em;
+                            color: #fff;
+                        }
+                    }
+                    & .rt{
+                        display: flex;
+                        font-size: 0.9em;
+                        align-items: center;
+                        color: #fff;
+                        gap: 0.5em;
+                        & .ratings i{
+                            color: gold;
+                        }
+                    }
+                }
+                & p{
+                    font-size: 0.9em;
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    }
+}
