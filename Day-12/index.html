@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCHI - Presentation design agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<style>
+    html[data-direction="down"] #navbar {
+  top: -100%;
+}
+</style>
+<body>
+    <div class="mainbox h-full w-full relative" data-scroll-container>
+        <div  data-scroll data-scroll-sticky data-scroll-target=".mainbox" data-direction="down" id="navbar" class="duration-100 z-[100] navbar flex items-center w-full h-[70px] justify-between px-[4vw] bg-transparent backdrop-blur-sm fixed top-0 left-0">
+            <div class="logo">
+                <svg width="72" height="30" viewBox="0 0 72 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.8393 10.2032C4.22951 10.3257 -0.0459221 14.7356 0.000372391 20.2752C0.0412204 25.3548 4.57808 30.3608 10.6862 29.9226C15.5145 29.5768 19.9015 25.4119 19.8525 20.0057C19.8035 14.5995 15.1904 10.0916 9.8393 10.2032ZM9.89649 25.7005C6.87101 25.7005 4.39834 23.1144 4.40924 19.9839C4.39525 19.2507 4.52792 18.522 4.79947 17.8407C5.07102 17.1594 5.47597 16.5392 5.99056 16.0164C6.50515 15.4937 7.11902 15.0789 7.79613 14.7966C8.47324 14.5142 9.19995 14.3698 9.93362 14.372C10.6673 14.3742 11.3931 14.5228 12.0686 14.8092C12.744 15.0956 13.3554 15.514 13.8668 16.0398C14.3783 16.5656 14.7796 17.1882 15.0471 17.8711C15.3146 18.554 15.4429 19.2834 15.4246 20.0166C15.4409 23.1008 12.9111 25.7059 9.88832 25.7005H9.89649Z"
+                        fill="currentColor"></path>
+                    <path d="M62.8086 29.4855H67.1222V10.6372H62.8086V29.4855Z" fill="currentColor"></path>
+                    <path
+                        d="M67.6816 0.172852V6.13439H71.5322C71.6738 6.13439 71.8046 6.13439 72.0006 6.11534V0.172852H67.6816Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M31.5648 25.7016C28.5393 25.7016 26.0667 23.1156 26.0776 19.9851C26.0936 18.5291 26.6764 17.1366 27.7023 16.1029C28.7282 15.0692 30.1166 14.4757 31.573 14.4482C32.4198 14.4541 33.2537 14.6557 34.0095 15.0373C34.7654 15.4188 35.4227 15.97 35.9301 16.6477L40.0667 15.0144C38.2884 12.0853 35.0669 10.1145 31.4995 10.1989C25.8897 10.3214 21.6142 14.7313 21.6605 20.2709C21.7014 25.3505 26.2382 30.3565 32.3464 29.9183C33.9908 29.7803 35.5761 29.2408 36.9631 28.347C38.3501 27.4532 39.4963 26.2326 40.3009 24.7924L36.2542 22.9931C35.7705 23.8086 35.0851 24.486 34.2638 24.9604C33.4426 25.4347 32.5132 25.69 31.5648 25.7016Z"
+                        fill="currentColor"></path>
+                    <path
+                        d="M52.4097 10.1387C51.2512 10.1119 50.1066 10.3947 49.0941 10.958C48.0816 11.5212 47.2379 12.3445 46.6501 13.3427V0.172852H42.293V29.4688H46.6501C46.6501 29.1721 46.6501 18.7816 46.6501 18.7816C46.6501 15.6946 47.8619 13.4352 50.8084 13.4352C54.6046 13.4352 54.6209 17.4178 54.6209 19.6962C54.6209 22.9165 54.6209 25.5189 54.6209 28.7393V29.4987H59.0271C59.0271 29.3708 59.0488 29.2728 59.0488 29.1721C59.0488 25.5108 59.0951 21.8522 59.0325 18.1909C58.9916 15.6538 58.5015 10.1387 52.4097 10.1387Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+            <div class="links flex gap-5 items-center font-[Neue] text-[#424242]">
+                <a href="#" class="capitalize">services</a>
+                <a href="#" class="capitalize">Our work</a>
+                <a href="#" class="capitalize">about us</a>
+                <a href="#" class="capitalize">Insights</a>
+                <a href="#" class="ml-[15vw] capitalize">contact us</a>
+            </div>
+        </div>
+        <div  data-scroll data-scroll-speed="" class="landing w-full h-screen bg-[#F1F1F1] relative top-0 left-0 overflow-x-hidden">
+            <div class="top-landing w-full h-[80%] flex flex-col justify-center px-[4vw]">
+                <div class="masker h-[18%] mt-[70px]">
+                    <h1 class="uppercase font-semibold font-[Founder] text-9xl leading-[5vw] text-[#212121]">We create
+                    </h1>
+                </div>
+                <div class="masker h-[18%] flex">
+                    <div class="logoImg h-[90%] rounded-md w-[0vw] bg-white">
+                        <img src="./images/content-image01.jpg" class="w-full h-full object-cover rounded-md" alt="">
+                    </div>
+                    <h1 class="uppercase font-semibold font-[Founder] text-9xl leading-[5vw] text-[#212121]">eye-opening
+                    </h1>
+                </div>
+                <div class="masker h-[18%]">
+                    <h1 class="uppercase font-semibold font-[Founder] text-9xl leading-[5vw] text-[#212121]">
+                        presentations</h1>
+                </div>
+            </div>
+            <div class="bottom-landing w-full h-[20%] border-t-[1px] border-solid border-[#bbb] pt-[20px]">
+                <div class="inner flex items-center justify-between px-[4vw] font-[Neue] text-[#424242]">
+                    <p>For public and private companies</p>
+                    <p>From the first pitch of IPO</p>
+                    <div class="start flex gap-4 items-center">
+                        <p
+                            class="hover:bg-black hover:text-white duration-200 border-[1px] border-black uppercase border-solid rounded-full h-[35px] flex items-center justify-center px-[10px]">
+                            Start the project</p>
+                        <div
+                            class="hover:bg-black hover:text-white duration-200 icon border-[1px] border-solid border-black rounded-full w-[35px] h-[35px] flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right rotate-[-45deg]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="awwards rotate-[-90deg] text-white flex gap-[2vw] items-center absolute bg-[#E73C37] top-[35%] -translate-y-[-50%] w-max p-4 h-max right-0 -translate-x-[-35%]">
+                <p class="font-[Poppins]">Site of the Day</p>
+                <p class="rotate-[90deg] font-[Neue] font-bold">W .</p>
+            </div>
+        </div>
+        <div data-scroll data-scroll-speed="" class="reel bg-[#004D43] w-full flex items-center py-[5vw] overflow-x-hidden">
+            <div
+                class="inner border-t-[1px] nowrap border-b-[1px] w-full border-solid overflow-x-hidden border-white overflow-y-hidden uppercase flex text-white font-[Founder] items-center gap-[3vw]">
+                <h1 class="text-nowrap leading-[50vh] text-[50vh]">WE are ochi</h1>
+                <h1 class="text-nowrap leading-[50vh] text-[50vh]">WE are ochi</h1>
+                <h1 class="text-nowrap leading-[50vh] text-[50vh]">WE are ochi</h1>
+                <h1 class="text-nowrap leading-[50vh] text-[50vh]">WE are ochi</h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true,
+            getDirection: true,
+        });
+        scroll.on('scroll', (instance) => {
+    document.documentElement.setAttribute('data-direction', instance.direction)
+});
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
